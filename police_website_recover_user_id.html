@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=0.5">
+				<title>Page title</title>
+				<style>
+*{
+margin: 0px;
+padding: 0px;
+box-sizing:border-box;
+}
+body{
+width:100%;
+height:900px;
+}
+
+.container{
+width:90%;
+margin:0 auto;
+}
+.inner-box{
+width: 100%;
+
+}
+.top-header{
+width: 100%;
+height: 15px;
+background:#0AC642;
+}
+
+/*_______Css For Header______*/
+
+
+.header{
+display:flex;
+justify-content:left;
+align-items:center;
+background:#131B42;
+color:white;	
+padding:8px 20px;
+}
+
+/*_____Css For Header Logo______*/
+
+.header .logo{
+height:45px;
+width: 45px;
+background:transferent;
+
+}
+.header .logo img{
+height:100%;
+width: 100%;
+}
+
+/*_____Css For Header Text______*/
+
+.header-text{
+font-size:5px;
+padding-left:10px;
+}
+.header-text h2{
+font-size:15px;
+}
+.header-text b{
+font-size:2px;
+}
+.header-text b span{
+border-left:1px solid white;
+padding:0px 2px;
+}
+
+.header-text b span:first-child{
+border-left:none;
+padding-left:0px;
+}
+
+/*_____Css For Sub Header Menu______*/
+.sub-header{
+width: 100%;
+background: white;
+}
+
+.menu{
+width:100%;
+padding:0px;
+}
+
+.menu ul{
+display:flex;
+justify-content:left;
+align-items:center;
+list-style:none;
+background:#AD1E24;
+font-size:1px;
+}
+.menu ul li{
+padding: 4px 12px;
+box-sizing:border-box;
+transition:1s;
+}
+.menu ul li a{
+text-decoration:none;
+color:#e2c300;
+font-size:1px;
+transition:0.8s;
+}
+
+.menu ul li a.active{
+color:#fff;
+font-weight:;
+}
+.menu ul li:hover{
+background: black;
+cursor:pointer;
+}
+.menu ul li:hover a{
+color: white;
+background:transferent;
+cursor:pointer;
+}
+.menu ul li:active{
+background:tan;
+cursor:pointer;
+}
+.menu ul li:active a{
+color:white;
+cursor:pointer;
+}
+.menu ul li:visited{
+background:#fea;
+cursor:pointer;
+}
+.menu ul li:visited a{
+color:white;
+cursor:pointer;
+}
+
+
+/*_______Css For Midpart________*/
+
+.midpart{
+width: 100%;
+background:#E8E8E8;
+}
+.midpart p{
+text-align:center;
+padding-top:20px;
+font-size:9px;
+font-weight:bold;
+}
+.box{
+display:block;
+justify-content:center;
+align-items:center;
+background:#E8E8E8;
+box-sizing:border-box;
+padding:30px;
+}
+
+label{
+position: absolute;
+top:-7px;
+left:10px;
+font-size:12px;
+background:#E8E8E8;
+}
+.box div.items{
+position: relative;
+border:1px solid #a7a7a7;
+padding:15px;
+box-sizing:border-box;
+border-radius: 5px;
+list-style:none;
+}
+div.items table.table{
+display:flex;
+justify-content:center;
+align-items:center;
+border:px solid black;
+font-size:11px;
+}
+table.table tr{
+height:35px;
+}
+table.table th{
+font-weight:500;
+text-align:left;
+padding:15px;
+}
+
+table.table td input{
+width: 100%;
+height: 30px;
+padding:0px 10px;
+border:1px solid #C3C1C3;
+border-radius: 5px;
+background: #EAF4FF;
+}
+table.table td select{
+width: 205px;
+height: 30px;
+padding:0px 5px;
+border:1px solid #C3C1C3;
+background: #EAF4FF;
+border-radius: 5px;
+}
+table.table td button{
+width: 49%;
+height: 30px;
+border:1px solid #C3C1C3;
+border-radius: 5px;
+cursor:pointer;
+}
+table.table td button:focus{
+background: #d1d1d1;
+outline:none;
+}
+
+.alert{
+color:red;
+padding:0px;
+font-weight:bold;
+box-siging:border-box;
+transition:1s;
+}
+.box div.its{
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-weight:bold;
+}
+.box div.ite{
+width: 20px;
+height: 20px;
+border:1px solid black;
+border-radius: 50%;
+background: red;
+margin-right:15px;
+}
+
+/*_____Css For Top Footer______*/
+
+.top-footer{
+width: 100%;
+height:17px;
+background:#AD1E24;
+}
+.top-footer .top-footer-p{
+text-align:right;
+font-size:10px;
+padding:2px 5px;
+color:
+}
+.footer-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border:1px solid #a7a7a7;
+border-radius: 5px;
+padding:8px 5px;
+font-size:1px;
+margin-top:5px;
+height: 38px;
+}
+
+.footer-box .footer-right{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+.footer-box .footer-right img{
+width: 80px;
+height: 30px;
+padding-left:20px;
+}
+				</style>
+</head>
+<body>
+<div class="container">
+<div class="inner-box">
+<div class="top-header"></div>
+<section><header>
+<div class="header">
+<div class="logo"><img src="Image/pbd_logo.png" alt="Police_Logo"></div>		
+<div class="header-text">
+<b>Government of the People's Republic of Bangladesh</b>
+<h2>Bangladesh Police</h2>
+<b><span>Descipline</span><span>Security</span><span>Progress</span></b>
+</div>
+</div>
+</header></section>
+<section>
+   <div class="sub-header">
+<div class="menu">
+<ul>
+<li><a href="police_website_photo_signature.html"class="active">Home</a></li>
+<li><a href="#">Payment Status</a></li>
+<li><a href="#">Recover User ID</a></li>
+<li><a href="#">Recover Password</a></li>
+<li><a href="#">Help</a></li>
+</ul>
+</div>		
+</div>
+</section>
+<section>
+				<div class="midpart">
+<p>Recover User ID</p>
+<div class="box">
+<div class="items">
+<label>Recover User ID</label>
+<form class=".form"onsubmit="myFunction();return false;">
+<table class="table"border="0"cellspacing="0">
+<tr>
+<th>Post Name</th><th>:</th>
+<td><select>
+<option value="Trainee Recruit Constable (Ref:44.01.0000.28.02.0009.22-24);">Trainee Recruit Constable (Ref:44.01.0000.28.02.0009.22-24);</option>
+<option value="Trainee Sub-Inspector (Ref:44.01.0000.28.02.0009.22-24);">Trainee Sub-Inspector (Ref:44.01.0000.28.02.0009.22-24);</option>
+<option value="Trainee Police Super (Ref:44.01.0000.28.02.0009.22-24);">Trainee Police Super (Ref:44.01.0000.28.02.0009.22-24);</option>
+</select></td>
+</tr>
+<tr>
+<th>Name</th><th>:</th>
+<td><input type="text"class="name"></td>
+</tr>
+<tr>
+<th>Father's Name</th><th>:</th>
+<td>
+<input type="text"class="fatherName"></td>
+</tr>
+<tr>
+<th>Mobile Number</th><th>:</th>
+<td><input type="tel"class="mobi-number"></td>
+</tr>
+<tr>
+<th>&nbsp;</th><th>&nbsp;</th>
+<td><button type="reset">Cancel</button>
+<button type="submit">Submit</button></td>
+</tr>
+<tr>
+<th>&nbsp;</th><th>&nbsp;</th>
+<td><small class="alert"></small></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+				</div>
+</section>
+<section>
+<div class="top-footer">
+<!--<p class="top-footer-p">
+Visitors :96765578</p> -->
+</div>
+</section>
+<section>
+<footer>
+<div class="footer-box">
+<div class="footer-left"><p>&copy;2022, All Rights Reserved by Bangladesh Police.</p></div>
+<div class="footer-right">
+<span>Powered by</span>
+<span><img src="Image/tbl_logo.png" alt="Teletalk_Logo"></span>
+</div>
+</div>
+</footer>
+</section>
+
+
+
+
+
+<!-------End of inner-box------>
+</div>
+</div>
+<script>
+/*---Declared All Variables----*/
+var Select=document.querySelector("select");
+var Name=document.querySelector(".name");
+var FName=document.querySelector(".fatherName");
+var Name=document.querySelector(".name");
+var mobileNum=document.querySelector(".mobi-number");
+var alert=document.querySelector(".alert");
+var ID=document.querySelector(".userID");
+var dtl=document.querySelector(".detail");
+
+/*-----Start All Function-----*/
+
+Name.addEventListener("blur",myBlur);
+FName.addEventListener("blur",myBlur);
+function myBlur(){
+Name.value=Name.value.toUpperCase();
+FName.value=FName.value.toUpperCase();
+}
+
+
+function myFunction(e){
+
+if((Select.value=="")||(Name.value=="")||(mobileNum.value=="")){
+
+Select.style="border-color:#ff001f;background:#ffb5aa;";
+Name.style="border-color:#ff001f;background:#ffb5aa;";
+FName.style="border-color:#ff001f;background:#ffb5aa;";
+mobileNum.style="border-color:#ff001f;background:#ffb5aa;";
+alert.innerHTML="* Please Enter Valid User Id and Mobile Number.!";
+}
+else{	
+
+ }
+}
+</script>
+</body>
+</html>
